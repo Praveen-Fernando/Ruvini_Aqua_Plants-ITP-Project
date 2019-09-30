@@ -1,0 +1,529 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 7, 2019, 11:34:15 PM
+    Author     : maduranga
+*/
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Quicksand";
+}
+
+p {
+  font-size: 14px !important;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(243, 36, 71);
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  margin-top: -20px;
+  float: left;
+  width: 75%;
+  /* padding: 10px; */
+  height: auto;
+  /* Should be removed. Only for demonstration */
+}
+
+.column {
+  margin-top: -20px;
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: auto;
+  /* Should be removed. Only for demonstration */
+}
+
+.columnImage {
+  margin-top: 1.6%;
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: auto;
+  /* Should be removed. Only for demonstration */
+}
+
+.columnBlog {
+  margin-top: 10px;
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: auto;
+  /* Should be removed. Only for demonstration */
+}
+
+/* .formLogin {
+ 
+} */
+
+.column25 {
+  margin-top: -20px;
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: auto;
+  /* Should be removed. Only for demonstration */
+}
+
+.column35 {
+  margin-top: -20px;
+  float: left;
+  width: 35%;
+  padding: 10px;
+  height: auto;
+  /* Should be removed. Only for demonstration */
+}
+
+.column40 {
+  margin-top: -20px;
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: auto;
+  /* Should be removed. Only for demonstration */
+}
+
+.column50 {
+  margin-top: -20px;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: auto;
+  /* Should be removed. Only for demonstration */
+}
+
+.column60 {
+  margin-top: -20px;
+  float: left;
+  width: 60%;
+  padding: 10px;
+  height: auto;
+  /* Should be removed. Only for demonstration */
+}
+
+.column75 {
+  background: #fff;
+  margin-top: -20px;
+  float: left;
+  width: 75%;
+  padding: 10px;
+  height: auto;
+  /* Should be removed. Only for demonstration */
+}
+
+.column90{
+  background: #fff;
+  margin-top: -20px;
+  float: left;
+  width: 90%;
+  padding: 10px;
+  height: auto;
+  /* Should be removed. Only for demonstration */
+}
+
+.column100 {
+  background: #fff;
+  margin-top: -20px;
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+.navmain {
+  overflow: hidden;
+  background-color: #302e2e;
+  height: 180px;
+  margin-top: -30px;
+}
+
+.title {
+  margin-left: 18%;
+  margin-top: 10%;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: "Quicksand";
+  color: #fff;
+}
+
+.search {
+  margin-top: 22%;
+}
+
+.buttonSearch {
+  margin-left: -52px;
+  padding: 15px;
+  border: none;
+  background: #fefefe;
+  color: #302e2e !important;
+  border-radius: 30px;
+}
+
+.inputSearch {
+  font-size: 13px;
+  padding: 13px;
+  border: none;
+  background: #fefefe;
+  color: #302e2e !important;
+  border-radius: 30px;
+  width: 90%;
+}
+
+.inputLogin {
+  font-size: 13px;
+  padding: 13px;
+  border: none;
+  background: #212121;
+  color: #fff !important;
+  border-radius: 30px;
+  width: 90%;
+  margin-bottom: 4%;
+}
+
+.inputContact {
+  font-size: 13px;
+  padding: 13px;
+  border: none;
+  background: #212121;
+  color: #fff !important;
+  border-radius: 30px;
+  width: 90%;
+  margin-bottom: 4%;
+  height: 100px;
+}
+
+.buttonLogin {
+  margin-left: 0px;
+  padding: 13px;
+  border: none;
+  background: rgb(243, 36, 71);
+  color: #fff !important;
+  border-radius: 30px;
+  width: 40%;
+  font-size: 13px;
+}
+
+.formLogin {
+  margin-top: -5%;
+}
+
+.labelLogin {
+  margin-top: 3%;
+  margin-left: 10%;
+  float: left;
+  font-size: 13px;
+  margin-bottom: 2%;
+}
+
+.radioButton {
+  margin-top: -1%;
+  margin-left: -55%;
+  font-size: 14px;
+}
+
+.blogPost {
+  background: #efefef;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+
+input[type=radio] {
+  border: 0px;
+  width: 17px;
+  height: 1.2em;
+}
+
+
+.footerHome {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #302e2e;
+  color: #fff;
+  text-align: left;
+  height: 170px;
+}
+
+.footerAdmin {
+  position: absolute;
+  right: 0;
+  bottom: -34%;
+  left: 0;
+  padding: 1rem;
+  background-color: #302e2e;
+  color: #fff;
+  text-align: left;
+}
+
+.column50footer {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  padding-left: 10%;
+  margin-top: 3%;
+}
+
+.columnfooter {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  margin-left: 3%;
+  margin-top: 1%;
+}
+
+.columnfooterright {
+  margin-top: -6.2%;
+  float: right;
+  width: 25%;
+  padding: 10px;
+  padding-left: 10%;
+}
+
+.icons {
+  font-size: 27px;
+  margin-right: 15%;
+}
+
+p {
+  font-size: 18px;
+}
+
+.signup {
+  color: #fff;
+  background: #302e2e;
+  width: 50%;
+  margin-top: 12%;
+}
+
+.signupText {
+  padding: 10px;
+  font-size: 13px;
+}
+
+.boxwithImage {
+  margin-top: 5%;
+  width: 100%;
+  background: #fff;
+  box-shadow: 2px 3px 5px #21212165;
+}
+
+/* .mainBody{
+
+} */
+
+.userProfile {
+  background: #efefef;
+  padding: 2%;
+  box-shadow: 3px 5px 10px #2121213b;
+  height: 30% !important;
+}
+
+.blogText {}
+
+.blogImage {}
+
+.faq {
+  margin-top: 2%;
+  width: 50%;
+  background: #fff;
+  padding: 0.4%;
+  box-shadow: 2px 3px 13px #2121215b;
+}
+
+.instructorImage{
+  border-radius: 50%;
+}
+
+table{
+  background: #efefef;
+  text-align: center;
+}
+
+th{
+  font-weight: 600;
+  background: #F22446;
+  padding: 2%;
+}
+
+td{
+  background: rgb(202, 202, 202);
+  padding: 2%;
+}
+
+
+.tablecenter{
+  margin-left: 5%;
+}
+
+.TrainingFormCenter{
+  margin-left: 40%;
+}

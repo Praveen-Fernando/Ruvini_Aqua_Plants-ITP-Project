@@ -1,0 +1,12 @@
+// IT18255720
+
+
+
+
+
+
+// Delete.java    servlet
+
+//edit.java       servlet
+  
+//insertdata.java  servletS
