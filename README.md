@@ -1,4 +1,4 @@
-Developed a web-based plants buying and Maintenance system for “Ruvani Aqua Plants” in Moratuwa, implementing eight different functions: Customer management, Employee management, Finance management, Payment management, Delivery management, Supplier management, Admin management.
+This System is a Web-based plants buying and Maintenance system, the system was developed with eight different functions Customer management, Employee management, Finance management, Payment management, Delivery management, Supplier management, Admin management.
 
 *There are two main areas of this web application as the customer section and the admin section.
 *In oder to have have credentials as customer need to register and login first.
