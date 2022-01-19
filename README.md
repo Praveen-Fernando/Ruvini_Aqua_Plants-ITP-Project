@@ -2,7 +2,7 @@ This System is a Web-based plants buying and Maintenance system, the system was 
 
 &check; There are two main areas of this web application as the customer section and the admin section.\
 &check; In oder to have have credentials as customer need to register and login first.\
-&check; In order to have credentials as admin you need to login as the username and the password provided below.\
+&check; In order to have credentials as admin you need to login as the username and the password provided below.
 
 Username:admin
 Password:1234
